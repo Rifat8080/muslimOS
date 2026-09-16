@@ -6,10 +6,10 @@ Rails.application.routes.draw do
     get "(*path)", to: redirect { |params, req| "#{req.protocol}localhost:#{req.port}/#{params[:path]}" }
   end
 
-  root 'layouts#landing'
-  get 'landing', to: 'layouts#landing'
-  get 'dashboard', to: 'layouts#dashboard'
-  get 'inertia-example', to: 'inertia_example#index'
+  root "layouts#landing"
+  get "landing", to: "layouts#landing"
+  get "dashboard", to: "layouts#dashboard"
+  get "inertia-example", to: "inertia_example#index"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

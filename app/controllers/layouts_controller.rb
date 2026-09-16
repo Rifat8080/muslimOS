@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class LayoutsController < InertiaController
-  before_action :authenticate_user!, only: [:dashboard]
+  before_action :authenticate_user!, only: [ :dashboard ]
 
   def landing
     render inertia: "layouts/landing"
