@@ -1,0 +1,472 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(88, 119, 255, 0.2), transparent 32%),
+    linear-gradient(180deg, #f4f7ff 0%, #edf2ff 18%, #f9fbff 100%);
+  color: #122033;
+  font-family: Inter, 'Segoe UI', sans-serif;
+}
+
+.topbar,
+.hero,
+.logoStrip,
+.featuresSection,
+.showcase,
+.cta,
+.footer {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0 10px;
+}
+
+.brandWrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brandMark {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #1d4ed8 0%, #5b8cff 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 16px 34px rgba(48, 97, 255, 0.28);
+}
+
+.brandText {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.nav a,
+.linkButton {
+  color: #46566f;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.headerActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.primaryButton,
+.secondaryButton {
+  border: 0;
+  border-radius: 12px;
+  padding: 0.9rem 1.4rem;
+  font-size: 0.96rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #1632a7 0%, #3d64ff 100%);
+  color: #ffffff;
+  box-shadow: 0 22px 40px rgba(50, 88, 255, 0.25);
+}
+
+.secondaryButton {
+  background: rgba(22, 50, 167, 0.08);
+  color: #183989;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-1px);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 42px;
+  padding: 56px 0 18px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(27, 91, 255, 0.08);
+  color: #234bc1;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.heroCopy h1,
+.sectionHeading h2,
+.showcaseCopy h2,
+.cta h2 {
+  margin: 0;
+  letter-spacing: -0.06em;
+  color: #091a2c;
+}
+
+.heroCopy h1 {
+  max-width: 600px;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 0.97;
+}
+
+.heroCopy p {
+  max-width: 560px;
+  margin: 18px 0 0;
+  color: #4d5d79;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.socialProof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-top: 30px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statItem strong {
+  color: #0c1d32;
+  font-size: 1.4rem;
+  letter-spacing: -0.05em;
+}
+
+.statItem span {
+  color: #5f6e85;
+  font-size: 0.82rem;
+}
+
+.heroVisual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboardCard {
+  width: min(100%, 520px);
+  padding: 20px;
+  border-radius: 30px;
+  background: rgba(8, 16, 31, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 35px 80px rgba(14, 28, 53, 0.25);
+}
+
+.cardHeader {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 18px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.previewGrid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 16px;
+}
+
+.metricCardLarge,
+.metricCard,
+.chartCard {
+  border-radius: 22px;
+  background: rgba(148, 168, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 18px 16px;
+}
+
+.metricCardLarge {
+  grid-row: span 2;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(180deg, rgba(90, 124, 255, 0.32), rgba(90, 124, 255, 0.08));
+}
+
+.metricLabel {
+  display: block;
+  color: rgba(220, 228, 255, 0.75);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.metricCardLarge strong,
+.metricCard strong {
+  display: block;
+  margin-top: 12px;
+  color: #ffffff;
+  letter-spacing: -0.06em;
+}
+
+.metricCardLarge strong {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.metricCardLarge small {
+  display: inline-block;
+  margin-top: 8px;
+  color: #b9c9ff;
+  font-size: 0.78rem;
+}
+
+.metricCard strong {
+  font-size: 1.6rem;
+}
+
+.chartCard {
+  display: flex;
+  align-items: end;
+  min-height: 130px;
+}
+
+.chartBars {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+  height: 110px;
+  gap: 8px;
+}
+
+.chartBars span {
+  display: block;
+  flex: 1;
+  border-radius: 999px 999px 0 0;
+  background: linear-gradient(180deg, #8eb2ff 0%, #4f7fff 100%);
+}
+
+.logoStrip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px 32px;
+  padding: 24px 0 12px;
+  color: rgba(36, 50, 71, 0.58);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.featuresSection {
+  padding: 82px 0 30px;
+}
+
+.sectionHeading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sectionHeading h2,
+.showcaseCopy h2,
+.cta h2 {
+  font-size: clamp(2.2rem, 3vw, 3.3rem);
+  line-height: 1.05;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.featureCard {
+  padding: 28px 24px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(78, 98, 145, 0.1);
+  box-shadow: 0 20px 40px rgba(25, 41, 69, 0.05);
+}
+
+.featureIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #e7eeff 0%, #cfe0ff 100%);
+  color: #1e46c5;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.featureCard h3 {
+  margin: 18px 0 10px;
+  color: #0e1d31;
+  font-size: 1.35rem;
+  letter-spacing: -0.04em;
+}
+
+.featureCard p,
+.showcaseCopy li,
+.footer p {
+  color: #53657d;
+  line-height: 1.7;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: center;
+  gap: 28px;
+  padding: 76px 0 24px;
+}
+
+.showcaseCopy ul {
+  margin: 20px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.showcaseCard {
+  padding: 26px;
+  border-radius: 28px;
+  background: rgba(13, 22, 37, 0.97);
+  color: #ffffff;
+  box-shadow: 0 25px 55px rgba(7, 16, 30, 0.18);
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.listTag {
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  background: rgba(104, 181, 116, 0.18);
+  color: #9ef0b4;
+  font-size: 0.72rem;
+}
+
+.progressRow {
+  margin-top: 22px;
+}
+
+.progressRow > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.progressBar {
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.progressBar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7ac0ff 0%, #7f7bff 100%);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-top: 42px;
+  margin-bottom: 40px;
+  padding: 34px 38px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #101f38 0%, #203f7a 100%);
+  color: #ffffff;
+}
+
+.cta .eyebrow {
+  background: rgba(157, 196, 255, 0.12);
+  color: #dfe8ff;
+}
+
+.cta h2 {
+  color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding-bottom: 56px;
+}
+
+@media (max-width: 900px) {
+  .nav,
+  .headerActions {
+    display: none;
+  }
+
+  .hero,
+  .showcase,
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featuresSection,
+  .showcase,
+  .cta {
+    padding-top: 54px;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
