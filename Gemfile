@@ -63,7 +63,7 @@ group :test do
 end
 
 gem "inertia_rails", "~> 3.22"
-gem "json", "~> 2.7"
+gem "json", "~> 3.1"
 gem "devise"
 
 gem "vite_rails", "~> 3.11"
